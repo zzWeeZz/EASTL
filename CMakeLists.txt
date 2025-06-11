@@ -1,7 +1,7 @@
 #-------------------------------------------------------------------------------------------
 # Copyright (C) Electronic Arts Inc.  All rights reserved.
 #-------------------------------------------------------------------------------------------
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.5)
 include(FetchContent)
 project(EASTL CXX)
 
@@ -70,6 +70,7 @@ target_include_directories(EASTL PUBLIC include)
 #-------------------------------------------------------------------------------------------
 # Dependencies
 #-------------------------------------------------------------------------------------------
+add_definitions(-DCMAKE_POLICY_VERSION_MINIMUM=3.5)
 FetchContent_Declare(
   EABase
   GIT_REPOSITORY https://github.com/electronicarts/EABase.git
