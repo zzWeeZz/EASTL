@@ -70,7 +70,6 @@ target_include_directories(EASTL PUBLIC include)
 #-------------------------------------------------------------------------------------------
 # Dependencies
 #-------------------------------------------------------------------------------------------
-add_definitions(-DCMAKE_POLICY_VERSION_MINIMUM=3.5)
 FetchContent_Declare(
   EABase
   GIT_REPOSITORY https://github.com/electronicarts/EABase.git
